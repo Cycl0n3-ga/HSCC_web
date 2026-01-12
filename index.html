@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HSCC - High School Computer Conference 2011">
+    <title>HSCC 2011 - High School Computer Conference</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hero {
+            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .sessions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 3rem 0;
+        }
+        
+        .session-card {
+            background: white;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .session-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .session-card h3 {
+            color: #2563eb;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .session-card p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-title">HSCC 2011</h1>
+                <p class="site-subtitle">High School Computer Conference</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#program">Program</a></li>
+                    <li><a href="#sessions">Sessions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to HSCC 2011</h1>
+            <p>Join us for an exciting conference dedicated to advancing computer science education at the high school level. Connect with educators, students, and industry professionals.</p>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="container">
+            <section id="sessions">
+                <h2 style="font-size: 2rem; font-weight: 600; margin-bottom: 2rem; text-align: center;">Conference Sessions</h2>
+                <div class="sessions-grid">
+                    <a href="sh3-2.html" class="session-card">
+                        <h3>Session 3-2</h3>
+                        <p>Advanced Topics in Computer Science Education - Explore innovative teaching methodologies and curriculum development strategies.</p>
+                    </a>
+                    <a href="#" class="session-card">
+                        <h3>Session 3-1</h3>
+                        <p>Introduction to Algorithm Design - Learn fundamental concepts and practical approaches to teaching algorithms.</p>
+                    </a>
+                    <a href="#" class="session-card">
+                        <h3>Session 3-3</h3>
+                        <p>Web Development for Beginners - Discover how to introduce students to modern web technologies.</p>
+                    </a>
+                    <a href="#" class="session-card">
+                        <h3>Session 4-1</h3>
+                        <p>Data Structures in Practice - Practical applications of data structures in computer science education.</p>
+                    </a>
+                    <a href="#" class="session-card">
+                        <h3>Session 4-2</h3>
+                        <p>Programming Languages Overview - Comparing different programming languages for educational purposes.</p>
+                    </a>
+                    <a href="#" class="session-card">
+                        <h3>Session 4-3</h3>
+                        <p>Project-Based Learning - Implementing effective project-based learning in CS classrooms.</p>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About HSCC</h3>
+                    <p>The High School Computer Conference brings together educators, students, and industry professionals to advance computer science education.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#program">Conference Program</a></li>
+                        <li><a href="#registration">Registration</a></li>
+                        <li><a href="#venue">Venue Information</a></li>
+                        <li><a href="#sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>National Tsing Hua University<br>
+                    Hsinchu, Taiwan<br>
+                    Email: hscc@cs.nthu.edu.tw</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2011 HSCC Conference. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
