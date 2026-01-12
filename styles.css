@@ -417,6 +417,24 @@ body {
         font-size: 0.875rem;
     }
     
+    .hero {
+        padding: 3rem 0;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .sessions-grid {
+        grid-template-columns: 1fr;
+        padding: 2rem 0;
+    }
+    
     .paper-header {
         padding: 2rem 1.5rem 1.5rem;
     }
@@ -446,6 +464,66 @@ body {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+}
+
+/* Hero Section (for index.html) */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Sessions Grid (for index.html) */
+.sessions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 3rem 0;
+}
+
+.session-card {
+    background: var(--background);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.session-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+}
+
+.session-card h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.session-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
 }
 
 /* Animations */
